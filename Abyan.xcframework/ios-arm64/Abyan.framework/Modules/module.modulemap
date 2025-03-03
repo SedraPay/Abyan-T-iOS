@@ -1,0 +1,11 @@
+framework module Abyan {
+  umbrella header "Abyan.h"
+  export *
+
+  module * { export * }
+}
+
+module Abyan.Swift {
+  header "Abyan-Swift.h"
+  requires objc
+}
