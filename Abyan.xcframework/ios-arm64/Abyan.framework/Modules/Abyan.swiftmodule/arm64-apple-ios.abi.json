@@ -27372,7 +27372,7 @@
           {
             "kind": "Function",
             "name": "setSettings",
-            "printedName": "setSettings(serverKey:serverURLString:_:_:referenceKey:)",
+            "printedName": "setSettings(serverKey:serverURLString:_:_:referenceKey:customerId:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27427,11 +27427,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5AbyanAAC11setSettings9serverKey0D9URLString__09referenceE0ySS_SSSgSbAA0A11JourneyTypeOAGtKF",
-            "mangledName": "$s5AbyanAAC11setSettings9serverKey0D9URLString__09referenceE0ySS_SSSgSbAA0A11JourneyTypeOAGtKF",
+            "usr": "s:5AbyanAAC11setSettings9serverKey0D9URLString__09referenceE010customerIdySS_SSSgSbAA0A11JourneyTypeOA2HtKF",
+            "mangledName": "$s5AbyanAAC11setSettings9serverKey0D9URLString__09referenceE010customerIdySS_SSSgSbAA0A11JourneyTypeOA2HtKF",
             "moduleName": "Abyan",
             "declAttributes": [
               "Final",
@@ -28045,17 +28060,31 @@
           {
             "kind": "Function",
             "name": "didUpdateKYCSuccessfully",
-            "printedName": "didUpdateKYCSuccessfully()",
+            "printedName": "didUpdateKYCSuccessfully(id:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:5Abyan0A11KYCDelegateP24didUpdateKYCSuccessfullyyyF",
-            "mangledName": "$s5Abyan0A11KYCDelegateP24didUpdateKYCSuccessfullyyyF",
+            "usr": "s:5Abyan0A11KYCDelegateP24didUpdateKYCSuccessfully2idySiSg_tF",
+            "mangledName": "$s5Abyan0A11KYCDelegateP24didUpdateKYCSuccessfully2idySiSg_tF",
             "moduleName": "Abyan",
             "genericSig": "<τ_0_0 where τ_0_0 : Abyan.AbyanKYCDelegate>",
             "sugared_genericSig": "<Self where Self : Abyan.AbyanKYCDelegate>",
@@ -48068,14 +48097,14 @@
     {
       "filePath": "\/Users\/amani\/Documents\/abyan-check-ios\/Abyan\/Abyan\/AbyanKYC.swift",
       "kind": "IntegerLiteral",
-      "offset": 452,
+      "offset": 459,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amani\/Documents\/abyan-check-ios\/Abyan\/Abyan\/AbyanKYC.swift",
       "kind": "IntegerLiteral",
-      "offset": 489,
+      "offset": 496,
       "length": 1,
       "value": "0"
     },

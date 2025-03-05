@@ -430,7 +430,7 @@ public protocol AbyanJourneyDelegate : ObjectiveC.NSObjectProtocol {
   final public var livenessImageId: Swift.String?
   final public var imagesIds: [Abyan.ServerImageDocument]?
   final public var journeySession: Swift.String?
-  final public func setSettings(serverKey: Swift.String, serverURLString: Swift.String?, _ needsLogging: Swift.Bool = false, _ journeyType: Abyan.AbyanJourneyType = .new, referenceKey: Swift.String? = nil) throws
+  final public func setSettings(serverKey: Swift.String, serverURLString: Swift.String?, _ needsLogging: Swift.Bool = false, _ journeyType: Abyan.AbyanJourneyType = .new, referenceKey: Swift.String? = nil, customerId: Swift.String? = nil) throws
   final public func getNationalities()
   @objc deinit
 }
@@ -448,7 +448,7 @@ public protocol EditImageViewDelegate : AnyObject {
 public protocol AbyanKYCDelegate {
   func kycFinishedWithError(error: Abyan.AbyanError)
   func kycFields(fields: [Abyan.AbyanKYCFieldItem])
-  func didUpdateKYCSuccessfully()
+  func didUpdateKYCSuccessfully(id: Swift.Int?)
 }
 @_hasMissingDesignatedInitializers final public class AbyanKYC {
   final public var delegate: (any Abyan.AbyanKYCDelegate)?
