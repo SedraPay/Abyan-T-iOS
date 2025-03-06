@@ -449,6 +449,7 @@ public protocol AbyanKYCDelegate {
   func kycFinishedWithError(error: Abyan.AbyanError)
   func kycFields(fields: [Abyan.AbyanKYCFieldItem])
   func didUpdateKYCSuccessfully(id: Swift.Int?)
+  func updateKYCFinishedWithError(error: Swift.String)
 }
 @_hasMissingDesignatedInitializers final public class AbyanKYC {
   final public var delegate: (any Abyan.AbyanKYCDelegate)?
