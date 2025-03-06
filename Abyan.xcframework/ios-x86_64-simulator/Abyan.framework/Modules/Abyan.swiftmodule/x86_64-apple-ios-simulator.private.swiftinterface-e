@@ -455,7 +455,7 @@ public protocol AbyanKYCDelegate {
   final public var delegate: (any Abyan.AbyanKYCDelegate)?
   final public func getKYCFields(fieldValues: [Abyan.formDataValueFields], productId: Swift.Int)
   final public func getOCRKYCFields(fieldValues: [Abyan.formDataValueFields], productId: Swift.Int)
-  final public func updateKYC(kycFields: [Abyan.AbyanKYCDynamicField])
+  final public func updateKYC(kycFields: [Abyan.AbyanKYCFieldItem])
   @objc deinit
 }
 public struct AbyanScreeningResponse : Swift.Codable {
